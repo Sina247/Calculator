@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Calculator</title>
+		<script src="https://cdn.tailwindcss.com"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	</head>
+	<body class="bg-gray-100 flex items-center justify-center min-h-screen px-4">
+		<div class="bg-white p-6 rounded-2xl shadow-lg w-full max-w-sm space-y-4">
+			<h1 class="text-xl font-bold text-center text-gray-800">Simple Calculator</h1>
+
+			<input id="display" type="text" readonly class="w-full p-4 text-right text-2xl border rounded-xl bg-gray-50 focus:outline-none" placeholder="0" />
+
+			<div class="grid grid-cols-4 gap-3 text-lg font-bold">
+				<button class="bg-gray-200 hover:bg-gray-300 p-4 rounded-xl transition" onclick="clearDisplay()">C</button>
+
+				<button class="bg-gray-200 hover:bg-gray-300 p-4 rounded-xl transition" onclick="appendValue('(')">(</button>
+
+				<button class="bg-gray-200 hover:bg-gray-300 p-4 rounded-xl transition" onclick="appendValue(')')">)</button>
+
+				<button class="bg-gray-200 hover:bg-gray-300 p-4 rounded-xl transition" onclick="appendValue('/')">÷</button>
+
+				<button class="bg-gray-200 hover:bg-gray-300 p-4 rounded-xl transition" onclick="appendValue('7')">7</button>
+
+				<button class="bg-gray-200 hover:bg-gray-300 p-4 rounded-xl transition" onclick="appendValue('8')">8</button>
+
+				<button class="bg-gray-200 hover:bg-gray-300 p-4 rounded-xl transition" onclick="appendValue('9')">9</button>
+
+				<button class="bg-gray-200 hover:bg-gray-300 p-4 rounded-xl transition" onclick="appendValue('*')">×</button>
+
+				<button class="bg-gray-200 hover:bg-gray-300 p-4 rounded-xl transition" onclick="appendValue('4')">4</button>
+
+				<button class="bg-gray-200 hover:bg-gray-300 p-4 rounded-xl transition" onclick="appendValue('5')">5</button>
+
+				<button class="bg-gray-200 hover:bg-gray-300 p-4 rounded-xl transition" onclick="appendValue('6')">6</button>
+
+				<button class="bg-gray-200 hover:bg-gray-300 p-4 rounded-xl transition" onclick="appendValue('-')">−</button>
+
+				<button class="bg-gray-200 hover:bg-gray-300 p-4 rounded-xl transition" onclick="appendValue('1')">1</button>
+
+				<button class="bg-gray-200 hover:bg-gray-300 p-4 rounded-xl transition" onclick="appendValue('2')">2</button>
+
+				<button class="bg-gray-200 hover:bg-gray-300 p-4 rounded-xl transition" onclick="appendValue('3')">3</button>
+
+				<button class="bg-gray-200 hover:bg-gray-300 p-4 rounded-xl transition" onclick="appendValue('+')">+</button>
+
+				<button class="bg-gray-200 hover:bg-gray-300 p-4 rounded-xl transition col-span-2" onclick="appendValue('0')">0</button>
+
+				<button class="bg-gray-200 hover:bg-gray-300 p-4 rounded-xl transition" onclick="appendValue('.')">.</button>
+
+				<button class="bg-gray-200 hover:bg-gray-300 p-4 rounded-xl transition" onclick="calculate()">=</button>
+			</div>
+		</div>
+
+		<script src="app.js"></script>
+	</body>
+</html>
