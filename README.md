@@ -1,4 +1,4 @@
-# 🧮 Simple-Calculator
+# 🧮 Calculator
 
 A sleek and user-friendly calculator built with **HTML**, **Tailwind CSS** and **JavaScript**. Perform basic arithmetic operations quickly with a clean, responsive interface.
 
