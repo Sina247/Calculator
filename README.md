@@ -9,5 +9,4 @@ A sleek and user friendly calculator built with **HTML**, **Tailwind CSS** and *
 - ✨ **Tailwind UI** : Modern, clean and mobile friendly design  
 - 🪶 **Lightweight** : Pure HTML, Tailwind CSS and JavaScript  
 - 📱 **Fully responsive** : Works flawlessly on all screen sizes  
-- ⌨️ **Keyboard support** : Use your keyboard for input and calculation  
 - 🧹 **Clear and Delete** : Easily clear all or delete last input  
